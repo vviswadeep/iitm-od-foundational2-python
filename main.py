@@ -207,7 +207,122 @@ Week 2 Activity Questions
 # print(inpString.count('.'))
 
 #24
-inpString=input()
-outString=inpString.replace('O','0')
-outNumber=int(outString)
-print(outNumber)
+# inpString=input()
+# outString=inpString.replace('O','0')
+# outNumber=int(outString)
+# print(outNumber)
+
+#25
+# a=3**100
+# b=str(a).count('3')#convert to string and count number of 3s
+# print("Total number of 3s in this number is",b)
+# _0=str(a).count('0')
+# _1=str(a).count('1')
+# _2=str(a).count('2')
+# _3=str(a).count('3')
+# _4=str(a).count('4')
+# _5=str(a).count('5')
+# _6=str(a).count('6')
+# _7=str(a).count('7')
+# _8=str(a).count('8')
+# _9=str(a).count('9')
+
+# if _0 and _1 and _2 and _3 and _4 and _5 and _6 and _7 and _8 and _9:
+#   print("All numbers are available")
+# else:
+#   print("All numbers are not available") 
+
+#26
+# lines = '''one
+# two
+# three'''
+# print('\n' in lines) #bool output will saw if newline is there or not
+# print(lines.count('\n')) #int output will say how many new lines
+
+#27
+# from math import exp
+# x=float(input()) # input need not be an int
+# sigmoid=1/(1+exp(-x)) #formula given (sigmoid function)(Use of -sign is enough to change its sign)
+# print(sigmoid)
+
+#28
+##Find and index
+# a="hello world"
+# print(a.find('z')) #output is -1 if substring doesnot match
+# print(a.index('z')) #throws error if substring not found
+
+#29
+# #a='python'
+# #b='py'
+# print((a in b) or (b in a)) #if totally disjoin gives false if there is a string within another then true
+# print((a in b) or (a not in b)) #This is like union of a set and its complement forever will be true
+
+#30
+# import random
+# alpha ='HT'
+# toss=random.choice(alpha) #Randomly picks from the cchoices it has in that string
+# print(toss)
+
+#31
+# start = input("Enter the start position: ")
+# end = input("Enter the end position: ")
+# #Get the start and end positions
+# column='ABCDEFGH'
+# startCol=column.index(start[0])+1
+# endCol=column.index(end[0])+1
+# #converting columns into numbers for ease of calculation
+# col=abs(startCol-endCol)
+# #number of columns moved from the start position
+
+# startRow=int(start[1])
+# endRow=int(end[1])
+# row=abs(startRow-endRow)
+# #number of rows moved from the start position
+
+# if col==row: #this should satisfy for the bishop to move in a diagonal
+#   print('YES')
+# else:
+#   print('NO')
+
+#32
+# a=int(input("Number of Gold Coins: "))
+# if (a//3)>=1 and (a%3)==0: #two conditions are checked here they should get a nonzero share and everyone should get equal number of coins
+#   print('YES')
+# else:
+#   print('NO')
+
+#33
+# inp = 'LWLWWWW'
+# numberPlayed = len(inp)
+# print(numberPlayed)
+
+# matchWon = inp.count('W')
+# print(matchWon)
+
+# if inp.find('WWW')>0:
+#   print("We have 3 match winning Streak from match number",inp.find('WWW')+1)
+# else:
+#   print("No 3 match Winning Streak")
+
+# firstWin = inp.index('W')
+# print(firstWin+1)
+
+#34
+# excelColumn = 'D'
+# master = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+# totalalpha = len(excelColumn)
+# #Length of the string is important to understand how many times it has gone through the same same loop
+# if totalalpha>1:
+#   print((master.index(excelColumn[0])+1)*26 + (master.index(excelColumn[1])+1))
+#   #each time it completes one cycle it has crossed 26 columns
+# else:
+#   print(master.index(excelColumn[0])+1)
+# #this does not hold good for 3 letter columns
+
+#35
+# name = input()
+# if name.isalpha():
+#   print('valid')
+# else:
+#   print('invalid')
