@@ -170,11 +170,3 @@ Convert the int to a string and then consider the face value of each digit and t
 #b=a**0.5
 #c =  b-int(b)
 #print(c==0)
-
-
-""""
-a=1/3 33.33
-b=1/2 50.00
-c=1/4 25.00
-b-a=1/6 16.67
-"""
